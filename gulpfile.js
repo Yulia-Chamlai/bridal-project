@@ -51,7 +51,7 @@ function images() {
 }
 
 function styles() {
-  return src("app/scss/style.scss")
+  return src("app/scss/*.scss")
     .pipe(autoprefixer())
     .pipe(concat("style.min.css"))
     .pipe(scss({ style: "compressed" }))
@@ -64,7 +64,7 @@ function watching() {
       baseDir: "./app",
     },
   });
-  watch(["app/scss/style.scss"], styles);
+  watch(["app/scss/*.scss"], styles);
   watch(["app/images/src"], images);
   watch(["app/images/sprite"], sprites);
   watch(["app/components/*", "app/pages/*"], pages);
@@ -97,6 +97,7 @@ function cleanDist() {
 
 exports.styles = styles;
 exports.images = images;
+exports.sprites = sprites;
 exports.fonts = fonts;
 exports.pages = pages;
 exports.scripts = scripts;
