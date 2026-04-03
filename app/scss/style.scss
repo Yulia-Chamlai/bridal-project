@@ -43,6 +43,7 @@ body {
 		&__nav-list	{
 			display: flex;
 			gap: 30px;
+			padding: 0 10px;
 		}	
 		&__nav-item {
 			text-transform: uppercase;
@@ -54,6 +55,137 @@ body {
 			gap: 20px;
 			align-items: center;
 		}		
+}
+
+.footer {	
+  &__top {
+		padding: 55px 0px 45px;
+		border-bottom: solid 1px vars.$bg-color;
+		margin-bottom: 50px;
+	}  
+  &__nav-list {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		align-items: center;
+	}
+  &__nav-item {		
+		@extend %opensans-regular;
+		color: vars.$text-color;
+		font-size: 16px;	
+	}
+	&__nav-item + &__nav-item {
+		padding-left: 10px;
+	}
+  &__nav-link {
+		border-bottom: solid 1px rgba(148, 137, 124, .35);
+	}	
+  &__logo {
+		display: inline-block;
+		margin-left: -20px;
+		margin-right: -20px;
+	}
+  &__bottom {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		margin-bottom: 50px;				
+	}	  
+  &__bottom-title {
+		@extend %opensans-regular;
+			font-size: 16px;
+			color: vars.$text-color;
+			opacity: 0.5;
+			margin-bottom: 20px;
+	}   
+  &__bottom-item {
+		margin-bottom: 5px;
+		font-size: 16px;
+		color: vars.$text-color;
+	} 
+	/* &__bottom-item + .footer__bottom-item{
+		padding-right: 15px;
+	} */ 
+	&__bottom-link {
+		display: inline-block;
+	}
+  &__bottom-address {
+		font-size: 16px;
+		color: vars.$text-color;
+		font-style: normal;
+	}  
+	&__bottom-box {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+	}
+  &__bottom-subscription {
+		max-width: 253px;
+	}
+  &__bottom-form {
+		width: 100%;
+		display: flex;
+    align-items: center;
+    justify-content: space-between;		
+		position: relative;
+	}
+  &__bottom-input {
+		display: block;
+		width: 100%;
+		border: none;	
+		padding: 1px 25px 5px 0px;	
+		border-bottom: solid 1px vars.$bg-color;
+		color: vars.$text-color;	
+		&::placeholder{
+			font-size: 16px;
+			color: vars.$text-color;
+		}
+	} 
+	&__bottom-btn {
+		position: absolute;
+		top: 10px;
+		right: 0;
+		cursor: pointer;
+	}
+	
+  &__policy {
+		background-color: vars.$bg-color; 
+	}
+  &__policy-box {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: space-between;
+		padding: 8px 26px;
+	}
+  &__policy-text {
+		font-size: 11px;
+		color: vars.$brown-color;
+		padding-right: 20px;
+	}
+  &__policy-list {
+		display: flex;
+		align-items: center;
+		gap: 37px;
+	}	  
+  &__policy-item + .footer__policy-item {
+		position: relative;
+		&::before {
+			position: absolute;
+			content: '|';
+			left: -21px;
+			top: -8px;
+			color: vars.$brown-color;
+		}
+	}
+  &__policy-link {
+		font-size: 11px;
+		color: vars.$brown-color;
+		display: block;
+	}
+}
+.footer__bottom-element +.footer__bottom-element {
+	padding-left: 10px;
 }
 
 
