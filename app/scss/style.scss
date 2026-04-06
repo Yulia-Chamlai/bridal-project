@@ -34,12 +34,13 @@ body {
 			text-transform: uppercase;
 			@extend %opensans-regular;
 			font-size: 16px;
-		}
+		}			
 		&__lang-link {
-			&--active{
+			span{
 				@extend %opensans-bold;
+				font-size: 16px;
 			}
-		}	
+		}
 		&__nav-list	{
 			display: flex;
 			gap: 30px;
@@ -102,10 +103,7 @@ body {
 		margin-bottom: 5px;
 		font-size: 16px;
 		color: vars.$text-color;
-	} 
-	/* &__bottom-item + .footer__bottom-item{
-		padding-right: 15px;
-	} */ 
+	} 	
 	&__bottom-link {
 		display: inline-block;
 	}
@@ -184,8 +182,46 @@ body {
 		display: block;
 	}
 }
-.footer__bottom-element +.footer__bottom-element {
-	padding-left: 10px;
+
+.promo {
+	background-color: vars.$bg-color;
+	text-align: center;
+	padding: 7px 10px 9px;
+	&__link {
+	text-transform: uppercase;
+	@extend %opensans-regular;
+	font-size: 11px;
+	color: vars.$brown-color;
 }
+}
+
+.top {   		
+		background-repeat: no-repeat;
+		background-size: cover;
+		min-height: 90vh;	
+		padding: 115px 134px 50px 0;
+  &__inner {
+	display: flex;
+	flex-direction: column;
+	margin-left: auto;
+	max-width: 446px
+	}
+  &__title {
+		@extend %lora-regular;
+		font-size: 80px;
+		line-height: 1.2;
+		color: vars.$accent-color;
+		margin-bottom: 60px;
+	}
+  &__link {
+		text-transform: uppercase;
+		color: vars.$white;
+		background-color: vars.$accent-color;
+		padding: 13px 38px;
+		border-radius: 3px;
+		align-self: flex-start;
+	}
+}
+
 
 
