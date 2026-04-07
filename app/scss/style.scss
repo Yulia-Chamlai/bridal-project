@@ -7,61 +7,78 @@ body {
   @extend %opensans-regular;
   font-size: 20px;
   line-height: 1.3;
+	color: vars.$text-color;
+}
+.section-title {
+  @extend %lora-regular;
+	color: vars.$accent-color;
+  font-size: 45px;   
+}
+
+.primary-link {
+	@extend %opensans-regular;
+	font-size: 16px;
+	color: vars.$text-color;
+	border: 1px solid vars.$text-color;
+	padding: 10px 65px;		
+	display: inline-block;
+	align-self: start;
+	text-align: center;
 }
 
 .header {		
-		&__inner {
+	&__inner {
       display: flex;
       justify-content: space-between;
 			align-items: center;
       padding: 20px 0 30px;
       flex-wrap: wrap;
-		}
-    &__logo {
+	}
+  &__logo {
       width: 100%;
       text-align: center;
       margin-bottom: 15px;
-    }
-    &__logo-link {
+  }
+  &__logo-link {
       display: inline-block;
-    }	
-		&__lang-list {
+  }	
+	&__lang-list {
       display: flex;
       @extend %opensans-regular;
       color: vars.$brown-color;
-		}	
-		&__lang-item {
+	}	
+	&__lang-item {
 			text-transform: uppercase;
 			@extend %opensans-regular;
 			font-size: 16px;
-		}			
-		&__lang-link {
+	}			
+	&__lang-link {
 			span{
 				@extend %opensans-bold;
 				font-size: 16px;
 			}
-		}
-		&__nav-list	{
+	}
+	&__nav-list	{
 			display: flex;
 			gap: 30px;
 			padding: 0 10px;
-		}	
-		&__nav-item {
+	}	
+	&__nav-item {
 			text-transform: uppercase;
 			color: vars.$brown-color;
 			font-size: 16px;
-		}	
-		&__actions-list {
+	}	
+	&__actions-list {
 			display: flex;
 			gap: 20px;
 			align-items: center;
-		}		
+	}		
 }
 
 .footer {	
   &__top {
 		padding: 55px 0px 45px;
-		border-bottom: solid 1px vars.$bg-color;
+		border-bottom: 1px solid vars.$bg-color;
 		margin-bottom: 50px;
 	}  
   &__nav-list {
@@ -192,7 +209,7 @@ body {
 	@extend %opensans-regular;
 	font-size: 11px;
 	color: vars.$brown-color;
-}
+ }
 }
 
 .top {   		
@@ -200,11 +217,13 @@ body {
 		background-size: cover;
 		min-height: 90vh;	
 		padding: 115px 134px 50px 0;
+		position: relative;
+		z-index: 1;
   &__inner {
 	display: flex;
 	flex-direction: column;
 	margin-left: auto;
-	max-width: 446px
+	max-width: 446px;	
 	}
   &__title {
 		@extend %lora-regular;
@@ -222,6 +241,131 @@ body {
 		align-self: flex-start;
 	}
 }
+
+.new-collection {
+	padding-top: 150px;
+	margin-bottom: 150px;
+  &__inner {		
+		display: flex;	
+		position: relative;	
+		&::after {
+			position: absolute;
+			content: '';
+			background-image: url('../images/new-coll-decor.svg');
+			background-repeat: no-repeat;
+			background-size: cover;
+			width: 412px;
+    	height: 444px;
+			left: -24px;
+			top: -268px;
+		}		
+	}
+	&__content {
+		display: flex;
+		flex-direction: column;
+		max-width: 480px;
+		width: 100%;
+		padding: 75px 27px 0 40px;	
+	}
+	&__title {
+		margin-bottom: 50px;
+	}
+  &__text {		
+		font-size: 16px;
+		margin-bottom: 30px;
+		max-width: 403px;
+	}   
+  &__link {	
+		margin-top: auto;
+	}
+  &__img {
+		max-width: 347px;
+		width: 100%;
+		padding-top: 75px;
+	}
+	&__img.right-image {
+		padding-top: 0;
+		max-width: 404px;
+	}
+  &__image-box {
+		display: flex;
+		flex-direction: column;
+		gap: 40px;
+		position: absolute;
+		max-width: 404px;
+		width: 100%;
+		top: 0;
+		right: 45px;		
+	}
+  &__image-caption {
+		max-width: 289px;
+    align-self: end;
+	}
+}
+
+.join-us {
+	background-color: vars.$bg-color;
+	margin-bottom: 150px;
+	&__img {
+		max-width: 540px;
+	}
+	&__inner {
+		padding: 0 40px;
+		display: flex;
+		gap: 40px;
+	}
+  &__content {
+	max-width: 540px;
+	width: 100%;
+	}
+  &__title {
+		padding-top: 40px;
+		margin-bottom: 20px;
+	}
+  &__text {
+		@extend %lora-regular;
+		font-size: 30px;
+		color: vars.$brown-color;
+		margin-bottom: 40px;		
+	}
+  &__form {
+		margin-bottom: 20px;
+	}
+  &__input {
+		max-width: 540px;
+		width: 100%;
+		display: inline-block;
+		padding: 0 20px 10px 0;
+		margin-bottom: 20px;
+		background-color: transparent;
+		border: none;
+		color: vars.$text-color;
+		border-bottom: 1px solid vars.$text-color;
+		&::placeholder {
+			@extend %opensans-regular;
+  		font-size: 20px;  		
+			color: vars.$text-color;
+		}
+	}
+  &__btn {
+		text-transform: uppercase;
+		text-align: center;
+		color: vars.$white;
+		display: inline-block;
+		width: 100%;
+		background-color: vars.$brown-color;
+	  @extend %opensans-regular;
+		padding: 12px 65px;
+		border-radius: 3px;
+		margin-bottom: 20px;
+	}
+  &__subtext {
+		font-size: 11px;
+		color: vars.$brown-color;
+	}
+}
+
+
 
 
 
