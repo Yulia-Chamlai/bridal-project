@@ -420,7 +420,6 @@ body {
 		position: absolute;
 		top: 25%;
     left: -152px;
-
 	}
   &__link {
 		margin-top: auto;
@@ -434,7 +433,7 @@ body {
 		display: flex;
 		gap: 70px;
 		padding: 0 40px;
-		margin-bottom: 80px;
+		margin-bottom: 150px;
 		position: relative;
 		&::after {
 			position: absolute;
@@ -444,8 +443,8 @@ body {
 			background-size: cover;
 			width: 326px;
 			height: 548px;
-			bottom: 0;
-			right: 0;
+			bottom: 0px;
+			right: 0px;
 		}
 	}
 	&__img {
@@ -478,6 +477,53 @@ body {
 		}
 	}
 }
+
+.our-blog {
+	margin-bottom: 100px;
+  &__inner {
+		display: grid;
+		grid-template-columns: 1fr 279px 329px;
+		row-gap: 25px;
+		column-gap: 20px;
+		position: relative;
+		&::after{
+			position: absolute;
+			content: '';
+			background-image: url('../images/our-blog-decor.svg');
+			background-repeat: no-repeat;
+			background-size: cover;
+			width: 212px;
+			height: 342px;
+			bottom: -10px;
+    	left: 60px;
+		}
+	}
+  &__item:nth-child(3) {		
+		grid-row: span 2;
+		align-self: center;
+	}
+	&__item:nth-child(4) {
+		grid-column: span 2;
+		justify-self: end;
+	}
+  &__title {
+		margin-bottom: 50px;
+	}
+  &__text {
+		font-size: 16px;
+		margin-bottom: 50px;
+		max-width: 403px;
+	}
+    &__item-title {
+		margin: 20px 0 5px;
+		@extend %lora-regular;
+	}
+  &__item-data {
+		font-size: 16px;
+		color: vars.$brown-color;
+	}
+}
+
 
 
 
