@@ -17,3 +17,23 @@ html, body {
   margin: 0 auto;
 }
 
+.breadcrumbs {
+	margin: 30px 0 50px;
+  &__list {
+		display: flex;
+		gap: 16px;
+	}
+  &__item {
+		font-size: 16px;
+		position: relative;
+	}
+	&__item + .breadcrumbs__item::after {
+		position: absolute;
+		content: '/';
+		top: 0;
+		left: -10px;
+	}
+  &__link {
+		display: inline-block;
+	}
+}
