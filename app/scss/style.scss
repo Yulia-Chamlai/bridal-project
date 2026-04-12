@@ -45,7 +45,7 @@ body {
   &__logo-link {
       display: inline-block;
   }	
-	&__lang-list {
+	&__language-list {
       display: flex;
       @extend %opensans-regular;
       color: vars.$brown-color;
@@ -523,6 +523,77 @@ body {
 		color: vars.$brown-color;
 	}
 }
+
+.appointment {
+	margin-bottom: 128px;
+  &__title {
+		margin: 50px 0 77px;
+		text-align: center;
+	}
+  &__inner {
+		display: flex;
+		padding: 0 40px;
+		gap: 40px;
+	}
+  &__content {
+		display: flex;
+		flex-direction: column;
+		position: relative;
+		z-index: 1;
+		&::after {
+			position: absolute;
+			content: '';
+			background-image: url('../images/appointment-decor.svg');
+			background-repeat: no-repeat;
+			background-size: cover;
+			width: 346px;
+    	height: 323px;
+    	left: 71%;
+    	top: -56px;
+    	z-index: -1;		
+		}
+	}
+  &__content-title {
+		@extend %lora-regular;
+		font-size: 30px;
+		margin-bottom: 80px;
+		color: vars.$accent-color;
+	}
+  &__content-text {
+		@extend %opensans-bold;
+		margin-bottom: 30px;
+	}
+  &__content-form {
+		max-width: 540px;
+	}
+  &__content-input {
+		width: 100%;
+		margin-bottom: 20px;
+		border: none;
+		border-bottom: 1.2px solid vars.$text-color;
+		padding: 0 10px 10px 0;
+		color: vars.$text-color;
+		background-color: transparent;
+		&::placeholder {
+			color: vars.$text-color;
+			@extend %opensans-regular;
+			font-size: 20px;
+		}
+	}
+  &__content-btn {
+		margin-top: auto;
+		background-color: vars.$brown-color;
+		text-transform: uppercase;
+		color: vars.$white;
+		padding: 13px;
+		border-radius: 3px;
+	}
+  &__img {
+		position: relative;
+		z-index: 1;
+	}
+}
+
 
 
 
