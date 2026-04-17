@@ -987,7 +987,75 @@ body {
 	right: 7px;
 }
 
+.big-container {
+	max-width: 1600px;
+	padding: 0 30px;
+	margin: 0 auto;
+}
+.page-404 {
+	margin-top: 40px;
+  &__inner {		
+		display: flex;
+	}
+  &__img-right {
+		img {
+			height: 100%;
+		}
+	}
+  &__content {
+		margin: 0 15px 0 35px;
+	}
+  &__title {
+		@extend %lora-regular;
+		font-size: 160px;
+		color: vars.$accent-color;
+		margin: 240px 0 80px;
+	}
+  &__link {
+		display: inline-block;
+		@extend %lora-regular;
+		font-size: 48px;
+		color: vars.$accent-color;
+		max-width: 841px;
+		width: 100%;
+		text-transform: uppercase;
+		padding-right: 110px;
+		position: relative;
+	}
+  &__link-img {
+		position: absolute;
+		content: '';
+		right: 0;
+		top: 26px;
+	}
+}
 
+.moving-line {
+	display: flex;
+	gap: 20px;
+	opacity: 0.2;
+	white-space: nowrap;	
+	animation-name: moving-text;
+	animation-duration: 20s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+  &__text {
+		@extend %lora-regular;
+		font-size: 160px;
+		text-transform: uppercase;		
+	}
+  &__img {
+		align-self: center;
+	}
+}
+@keyframes moving-text {
+	0% {
+		transform: translateX(0%);
+	}
+	100% {
+		transform: translateX(-100%);
+	}
+}
 
 
 
