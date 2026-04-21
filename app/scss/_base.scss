@@ -17,6 +17,12 @@ html, body {
   margin: 0 auto;
 }
 
+.big-container {
+	max-width: 1600px;
+	padding: 0 30px;
+	margin: 0 auto;
+}
+
 .breadcrumbs {
 	margin: 30px 0 80px;
   &__list {
