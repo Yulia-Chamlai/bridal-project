@@ -1186,8 +1186,7 @@ body {
 		border: 1px solid vars.$text-color;		
 		display: inline-block;
 		margin-bottom: 16px;
-	}
-  &__link {}
+	}  
   &__title {
 		font-size: 24px;
 		@extend %lora-medium;
@@ -1204,6 +1203,130 @@ body {
 .blog +.pagination {
 	margin-bottom: 50px;
 }
+
+.article {
+	color: vars.$accent-color;
+	h1 {
+		font-size: 96px;
+		@extend %lora-regular;
+		line-height: 1.2;
+		text-transform: uppercase;
+		margin-bottom: 22px;
+	}
+  &__stats {
+		display: flex;
+		align-items: center;
+		gap: 40px;		
+		margin-bottom: 40px;		
+	}	
+  &__category {
+		@extend %inter-regular;
+		font-size: 14px;
+		padding: 8px 24px;
+		border: 1px solid vars.$stroke-color;		
+		display: inline-block;
+		width: 107px;
+	}
+  &__date {
+		@extend %inter-regular;
+		font-size: 18px;
+		line-height: 1.6;
+		color: vars.$stroke-color;		
+		position: relative;
+		&::after {
+			position: absolute;
+			content: '|';
+			width: 1px;
+			height: 29px;
+			top: 0;
+			right: -20px;
+			color: vars.$stroke-color;
+		}
+	}
+  &__stats-list {
+		display: flex;
+		align-items: center;
+		gap: 16px;
+		color: vars.$stroke-color;
+	}
+  &__stats-item {
+		color: vars.$stroke-color;
+		display: flex;
+		gap: 4px;
+		align-items: center;		
+	}
+	picture:first-of-type {
+		width: 100%;
+		padding: 40px 0;
+		border-top: 1px solid rgba(22, 24, 21, 0.15);
+		border-bottom: 1px solid rgba(22, 24, 21, 0.15);
+	}
+  picture {
+		margin-bottom: 50px;
+	}
+	b {
+		font-size: 32px;
+		@extend %lora-regular;
+		line-height: 1.3;
+		margin-bottom: 50px;
+		display: inline-block;
+		max-width: 1220px;
+		width: 100%;
+	}
+	h2 {
+		font-size: 40px;
+		@extend %lora-medium;
+		line-height: 1.3;
+		margin-bottom: 40px;
+	}
+	h3 {
+		font-size: 32px;
+		@extend %lora-regular;
+		line-height: 1.3;
+		margin-bottom: 20px;
+	}
+	li {
+		list-style: disc;
+	}	
+	p {
+		margin-bottom: 40px;
+		max-width: 1220px;		
+	}
+	p {		
+		& + ul {
+			max-width: 716px;	
+			margin-bottom: 20px;
+			width: 100%;
+			margin-left: 40px;
+		}
+	}
+	p:nth-of-type(3) {
+		max-width: 716px;
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	p:nth-of-type(5) {
+		max-width: 716px;
+		width: 100%;
+		margin-bottom: 50px;
+	}	
+	p.article__category {
+		margin-bottom: 0;
+	}
+	p + p.article__date {
+		margin-bottom: 0;
+	}	
+	ul { 
+		margin-left: 30px;
+		margin-bottom: 40px;
+	}
+	li:has(ul) {
+		ul {
+			margin-bottom: 0;
+		}
+	}
+}
+
 
 
 
