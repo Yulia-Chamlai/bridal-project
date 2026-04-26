@@ -1,0 +1,313 @@
+<!--=include promo.html-->
+<!--=include header.html-->
+<main class="main">
+  <section class="catalog">
+    <div class="container">
+      <!--=include breadcrumbs.html-->
+      <div class="catalog__top">
+        <div class="catalog__top-mode mode">
+          <p class="mode__text">View as</p>
+          <button class="mode__btn-grid" type="button">
+            <svg width="20" height="20">
+                    <use xlink:href="images/sprite.svg#grid-mode-icon">
+                    </use>
+                </svg>
+          </button>
+          <button class="mode__btn-line" type="button">
+            <svg width="20" height="20">
+                    <use xlink:href="images/sprite.svg#line-mode-icon">
+                    </use>
+                </svg>
+          </button>
+        </div>
+        <h2 class="catalog__top-title section-title">WEDDING DRESSES</h2>
+        <form class="catalog__top-form sort-form">
+          <select class="sort-form__select">
+             <option value="Sort by popularity">Sort by popularity</option>
+             <option value="Sort by price">Sort by price</option>
+            <option value="Sort by designer">Sort by designer</option>            
+          </select>
+        </form>
+      </div>
+      <div class="catalog__content">
+        <div class="catalog__content-wrapper">
+          <aside class="catalog__content-filter catalog-filter">
+            <form class="catalog-filter__form">
+              <div class="catalog-filter__box">
+                <div class="catalog-filter__item item-price">
+                  <p class="item-price__title catalog-filter__item-title">PRICE</p>
+                  <div class="item-price__range range">
+                    <div class="range__input-box">
+                      <label class="range__label">
+                        <input class="range__min range__input" placeholder="300" type="number" min="300" max="3000" step="100">
+                      </label>-
+                      <label class="range__label">
+                        <input class="range__max range__input" placeholder="3000" type="number" min="300" max="3000" step="100">
+                      </label>
+                    </div>
+                  </div>
+                  <div class="range__slider"></div>
+                  <ul class="range__list">
+                    <li class="range__number">300</li>
+                    <li class="range__number">1,000</li>
+                    <li class="range__number">1,500</li>
+                    <li class="range__number">2,000</li>
+                    <li class="range__number">2,500</li>
+                    <li class="range__number">3,000</li>
+                  </ul>
+                </div>
+                <div class="catalog-filter__item item-size">
+                  <p class="item-size__title catalog-filter__item-title">SIZE</p>
+                  <div class="item-size__list">
+                    <label class="item-size__label checkbox-label">
+                      <input class="item-size__input checkbox-box" type="checkbox">
+                        <span class="checkbox-style"></span>
+                    XS
+                    </label>
+                    <label class="item-size__label checkbox-label">
+                      <input class="item-size__input checkbox-box" type="checkbox">
+                        <span class="checkbox-style"></span>
+                    S
+                    </label>
+                    <label class="item-size__label checkbox-label">
+                      <input class="item-size__input checkbox-box" type="checkbox">
+                        <span class="checkbox-style"></span>
+                    M
+                    </label>
+                    <label class="item-size__label checkbox-label">
+                       <input class="item-size__input checkbox-box" type="checkbox">
+                         <span class="checkbox-style"></span>
+                     L
+                    </label>
+                    <label class="item-size__label checkbox-label">
+                       <input class="item-size__input checkbox-box" type="checkbox">
+                        <span class="checkbox-style"></span>
+                    XL
+                    </label>
+                    <label class="item-size__label checkbox-label">
+                      <input class="item-size__input checkbox-box" type="checkbox">
+                        <span class="checkbox-style"></span>
+                    XXL
+                    </label>
+                  </div>
+                </div>
+                <div class="catalog-filter__item item-color">
+                  <p class="item-color__title catalog-filter__item-title">COLOR</p>
+                  <div class="item-color__list">
+                    <label class="item-color__label radio-label">
+                      <input class="item-color__radio-box radio-box" type="radio">
+                        <span class="radio-style"></span>
+                    WHITE
+                    </label>
+                    <label class="item-color__label radio-label">
+                      <input class="item-color__radio-box radio-box" type="radio">
+                        <span class="radio-style"></span>
+                    IVORY
+                    </label>
+                  </div>
+                </div>
+                <div class="catalog-filter__item item-material">
+                  <p class="item-material__title catalog-filter__item-title">MATERIAL</p>
+                  <div class="item-material__list">
+                    <label class="item-material__label checkbox-label">
+                       <input class="item-material__input checkbox-box" type="checkbox">
+                        <span class="checkbox-style"></span>
+                    LACE
+                    </label>
+                    <label class="item-material__label checkbox-label">
+                       <input class="item-material__input checkbox-box" type="checkbox">
+                        <span class="checkbox-style"></span>
+                    SILK
+                    </label>
+                    <label class="item-material__label checkbox-label">
+                       <input class="item-material__input checkbox-box" type="checkbox">
+                        <span class="checkbox-style"></span>
+                    CREPE
+                    </label>
+                    <label class="item-material__label checkbox-label">
+                       <input class="item-material__input checkbox-box" type="checkbox">
+                        <span class="checkbox-style"></span>
+                    SATIN
+                    </label>
+                    <label class="item-material__label checkbox-label">
+                       <input class="item-material__input checkbox-box" type="checkbox">
+                        <span class="checkbox-style"></span>
+                    EMBROIDERY
+                    </label>
+                    <label class="item-material__label checkbox-label">
+                       <input class="item-material__input checkbox-box" type="checkbox">
+                        <span class="checkbox-style"></span>
+                    ECO
+                    </label>
+                  </div>
+                </div>
+                <div class="catalog-filter__item item-style">
+                  <p class="item-style__title catalog-filter__item-title">STYLE</p>
+                  <div class="item-style__list">
+                    <label class="item-style__label checkbox-label">
+                       <input class="item-style__input checkbox-box" type="checkbox">
+                        <span class="checkbox-style"></span>
+                    ALL
+                    </label>
+                    <label class="item-style__label checkbox-label">
+                       <input class="item-style__input checkbox-box" type="checkbox">
+                        <span class="checkbox-style"></span>
+                    BOHO
+                    </label>
+                    <label class="item-style__label checkbox-label">
+                       <input class="item-style__input checkbox-box" type="checkbox">
+                        <span class="checkbox-style"></span>
+                    ROMANTIC
+                    </label>
+                    <label class="item-style__label checkbox-label">
+                       <input class="item-style__input checkbox-box" type="checkbox">
+                        <span class="checkbox-style"></span>
+                    VINTAGE
+                    </label>
+                    <label class="item-style__label checkbox-label">
+                       <input class="item-style__input checkbox-box" type="checkbox">
+                        <span class="checkbox-style"></span>
+                    SIMPLE
+                    </label>
+                    <label class="item-style__label checkbox-label">
+                       <input class="item-style__input checkbox-box" type="checkbox">
+                        <span class="checkbox-style"></span>
+                    MODERN
+                    </label>
+                    <label class="item-style__label checkbox-label">
+                       <input class="item-style__input checkbox-box" type="checkbox">
+                        <span class="checkbox-style"></span>
+                    FORMAL
+                    </label>
+                    <label class="item-style__label checkbox-label">
+                       <input class="item-style__input checkbox-box" type="checkbox">
+                        <span class="checkbox-style"></span>
+                    PRINCESS
+                    </label>
+                    <label class="item-style__label checkbox-label">
+                       <input class="item-style__input checkbox-box" type="checkbox">
+                        <span class="checkbox-style"></span>
+                    GLAMOROUS
+                    </label>
+                    <label class="item-style__label checkbox-label">
+                       <input class="item-style__input checkbox-box" type="checkbox">
+                        <span class="checkbox-style"></span>
+                    MODEST
+                    </label>
+                    <label class="item-style__label checkbox-label">
+                       <input class="item-style__input checkbox-box" type="checkbox">
+                        <span class="checkbox-style"></span>
+                    CASUAL
+                    </label>
+                    <label class="item-style__label checkbox-label">
+                       <input class="item-style__input checkbox-box" type="checkbox">
+                        <span class="checkbox-style"></span>
+                    BEACH
+                    </label>
+                    <label class="item-style__label checkbox-label">
+                       <input class="item-style__input checkbox-box" type="checkbox">
+                        <span class="checkbox-style"></span>
+                    MODEST
+                    </label>
+                    <label class="item-style__label checkbox-label">
+                       <input class="item-style__input checkbox-box" type="checkbox">
+                        <span class="checkbox-style"></span>
+                    ELOPEMENT
+                    </label>
+                  </div>
+                </div>
+                <button class="catalog-filter__btn" type="reset">CLEAN ALL</button>
+              </div>
+            </form>
+          </aside>
+          <div class="catalog__content-images view-mode__container 
+          view-mode__container--grid">
+           <div class="catalog__content-item">
+            <picture>
+            <source srcset="images/catalog-img1.avif" type="image/avif">
+            <source srcset="images/catalog-img1.webp" type="image/webp">
+            <img src="images/catalog-img1.jpg" width="270" height="400" alt="Alt text">
+            </picture>
+            <p class="catalog__content-title">Blanca</p>
+            <p class="catalog__content-price">1,850.00</p>
+           </div>
+           <div class="catalog__content-item">
+            <picture>
+            <source srcset="images/catalog-img2.avif" type="image/avif">
+            <source srcset="images/catalog-img2.webp" type="image/webp">
+            <img src="images/catalog-img2.jpg" width="270" height="400" alt="Alt text">
+            </picture>
+            <p class="catalog__content-title">Blanca</p>
+            <p class="catalog__content-price">1,850.00</p>
+           </div>
+           <div class="catalog__content-item">
+            <picture>
+            <source srcset="images/catalog-img3.avif" type="image/avif">
+            <source srcset="images/catalog-img3.webp" type="image/webp">
+            <img src="images/catalog-img3.jpg" width="270" height="400" alt="Alt text">
+            </picture>
+            <p class="catalog__content-title">Blanca</p>
+            <p class="catalog__content-price">1,850.00</p>
+           </div>
+           <div class="catalog__content-item">
+            <picture>
+            <source srcset="images/catalog-img4.avif" type="image/avif">
+            <source srcset="images/catalog-img4.webp" type="image/webp">
+            <img src="images/catalog-img4.jpg" width="270" height="400" alt="Alt text">
+            </picture>
+            <p class="catalog__content-title">Blanca</p>
+            <p class="catalog__content-price">1,850.00</p>
+           </div>
+           <div class="catalog__content-item">
+            <picture>
+            <source srcset="images/catalog-img5.avif" type="image/avif">
+            <source srcset="images/catalog-img5.webp" type="image/webp">
+            <img src="images/catalog-img5.jpg" width="270" height="400" alt="Alt text">
+            </picture>
+            <p class="catalog__content-title">Blanca</p>
+            <p class="catalog__content-price">1,850.00</p>
+           </div>
+           <div class="catalog__content-item">
+            <picture>
+            <source srcset="images/catalog-img6.avif" type="image/avif">
+            <source srcset="images/catalog-img6.webp" type="image/webp">
+            <img src="images/catalog-img6.jpg" width="270" height="400" alt="Alt text">
+            </picture>
+            <p class="catalog__content-title">Blanca</p>
+            <p class="catalog__content-price">1,850.00</p>
+           </div>
+           <div class="catalog__content-item">
+            <picture>
+            <source srcset="images/catalog-img7.avif" type="image/avif">
+            <source srcset="images/catalog-img7.webp" type="image/webp">
+            <img src="images/catalog-img7.jpg" width="270" height="400" alt="Alt text">
+            </picture>
+            <p class="catalog__content-title">Blanca</p>
+            <p class="catalog__content-price">1,850.00</p>
+           </div>
+           <div class="catalog__content-item">
+            <picture>
+            <source srcset="images/catalog-img8.avif" type="image/avif">
+            <source srcset="images/catalog-img8.webp" type="image/webp">
+            <img src="images/catalog-img8.jpg" width="270" height="400" alt="Alt text">
+            </picture>
+            <p class="catalog__content-title">Blanca</p>
+            <p class="catalog__content-price">1,850.00</p>
+           </div>
+           <div class="catalog__content-item">
+            <picture>
+            <source srcset="images/catalog-img7.avif" type="image/avif">
+            <source srcset="images/catalog-img7.webp" type="image/webp">
+            <img src="images/catalog-img7.jpg" width="270" height="400" alt="Alt text">
+            </picture>
+            <p class="catalog__content-title">Blanca</p>
+            <p class="catalog__content-price">1,850.00</p>
+           </div>
+          </div>        
+        </div>
+        <!--=include pagination.html-->
+      </div>
+    </div>
+  </section>
+</main>
+<!--=include footer.html-->
