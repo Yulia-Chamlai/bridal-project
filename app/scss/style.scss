@@ -917,7 +917,7 @@ body {
 
 .accessories {
   &__inner {	
-		position: relative;
+		position: relative;		
 		&::after {
 			position: absolute;
 			content: '';
@@ -941,16 +941,16 @@ body {
 		margin: 0 auto 40px;
 		border-bottom: 1px solid  vars.$bg-color;
 	}
-  &__slider {
-		width: 100%;
+  &__slider {	 
 		max-width: 950px;
 		overflow: hidden;
 		margin: 0 auto;
 		position: relative;
 		padding: 0 30px;
 	}
-  &__item {
+  &__item {	
 		text-align: center;
+		width: 100%
 	}
   &__img {
 		margin-bottom: 20px;
@@ -971,21 +971,21 @@ body {
 		top: 50%;
 		transform: translateY(-50%);
 	}
-}
-.swiper-arrow {
-	position: absolute;
-	z-index: 5;
-	display: inline-block;
-}
-.swiper-button-prev {
-	width: 10px;
-	height: 18px;
-	left: -7px;
-}
-.swiper-button-next {
-	width: 10px;
-	height: 18px;
-	right: 7px;
+	.swiper-arrow {
+		position: absolute;
+		z-index: 5;
+		display: inline-block;
+	}
+	.accessories__btn-prev.swiper-button-prev { 
+		width: 10px;
+		height: 18px;
+		left: 5px;
+	}
+	.accessories__btn-next.swiper-button-next {
+		width: 10px;
+		height: 18px;
+		right: 7px;
+	}
 }
 
 .page-404 {
@@ -1407,22 +1407,21 @@ body {
 		gap: 10px;
 		margin-top: 24px;
 	}
+	.swiper-pagination-fraction {
+	display: flex;
+	gap: 16px;
+  }
+
+  .swiper-pagination-current {
+	@extend %inter-regular;
+	font-size: 18px;
+	color: vars.$accent-color;	
+  }
+
 	.pagination {
 		margin-bottom: 60px;
 	}
 }
-
-.swiper-pagination-fraction {
-	display: flex;
-	gap: 16px;
-}
-
-.swiper-pagination-current {
-	@extend %inter-regular;
-	font-size: 18px;
-	color: vars.$accent-color;	
-}
-
 .reviews {
   &__slider-navigation {
 		position: absolute;
@@ -1448,6 +1447,7 @@ body {
 		cursor: pointer;
 	}  
 }
+
 
 .rating {
 	display: flex;
