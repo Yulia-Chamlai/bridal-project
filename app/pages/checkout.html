@@ -1,0 +1,182 @@
+<!--=include promo.html-->
+<!--=include header.html-->
+<main class="main">
+  <section class="checkout">
+    <div class="big-container">
+      <h2 class="checkout__title">Checkout</h2>
+      <div class="checkout-inner">
+        <div class="checkout__customer">
+          <div class="checkout__customer-item">
+            <h3 class="checkout__customer-title">Personal information</h3>
+            <div class="checkout__customer-box">
+              <label class="checkout__customer-label">Your name
+                <input class="checkout__customer-input" type="text" placeholder="Enter your name">
+              </label>
+              <label class="checkout__customer-label">Your Last Name*
+                <input class="checkout__customer-input" type="text" placeholder="Your Last Name*" required>
+              </label>
+              <label class="checkout__customer-label">Phone*
+                <input class="checkout__customer-input" type="number" placeholder="Enter your phone" required>
+              </label>
+              <label class="checkout__customer-label">Email*
+                <input class="checkout__customer-input" type="email" placeholder="Enter your email" required>
+              </label>
+            </div>
+          </div>
+           <div class="checkout__customer-item">
+            <h3 class="checkout__customer-title">Delivery address</h3>
+            <div class="checkout__customer-box">
+              <label class="checkout__customer-label checkout__customer-label--city">City*
+                <select class="checkout__customer-select" required>
+                  <option class="checkout__customer-option">Select city</option>
+                </select>
+              </label>
+              <label class="checkout__customer-label">Country*
+                <select class="checkout__customer-select" required>
+                  <option class="checkout__customer-option">Select country</option>
+                </select>
+              </label>
+              <label class="checkout__customer-label">Postal code*
+                <input class="checkout__customer-input" type="number" placeholder="Enter your postal code" required>
+              </label>
+              <label class="checkout__customer-label">Street name, house*
+                <input class="checkout__customer-input" type="text" placeholder="Enter address" required>
+              </label>
+            </div>
+          </div>
+          <div class="checkout__customer-item delivery-item">
+            <h3 class="checkout__customer-title delivery-item__title">Delivery method</h3>
+            <p class="delivery-item__text">Select delivery method*</p>
+            <div class="delivery-item__list">
+              <div class="delivery-item__method delivery-item__method--choosed">
+                <label class="radio-label radio-label__checked">
+                  <input class="delivery-item__input radio-box" type="radio" required>
+                  <span class="delivery-item__style radio-style"></span>
+                  Nova Poshta 
+                </label>
+                <p class="delivery-item__price">Free</p>
+              </div>  
+              <p class="delivery-item__description">Delivery will take 2-7 days</p>
+              <div class="delivery-item__method">
+                <label class="radio-label">
+                  <input class="delivery-item__input radio-box" type="radio" required>
+                  <span class="delivery-item__style radio-style"></span>
+                  Nova Poshta (home delivery) 
+                </label>
+                <p class="delivery-item__price">€20</p>
+              </div>            
+              <p class="delivery-item__description">Delivery will take 2-7 days</p>
+            </div>
+            
+          </div>
+          <div class="checkout__customer-item payment-item">
+            <h3 class="checkout__customer-title">Payment</h3>
+            <label class="checkout__customer-label">Your card number*
+              <input class="checkout__customer-input" type="number" placeholder="0000 0000 0000 0000" required>
+            </label>
+            <label class="checkout__customer-label">Validity period*
+              <input class="checkout__customer-input" type="number" placeholder="ММ/YY" required>
+            </label>
+            <label class="checkout__customer-label">Code*
+              <input class="checkout__customer-input" type="number" placeholder="000" required>
+            </label>
+            <label class="checkout__customer-label">Holder name*
+              <input class="checkout__customer-input" type="text" placeholder="Jane Brown" required>
+            </label>
+          </div>
+          <p class="checkout__customer-conditions">By clicking the "Place an order" button, 
+            you agree to the privacy policy and user agreement
+          </p>
+          <button class="checkout__customer-btn" type="submit">
+            Place an order
+          </button>
+        </div>
+        <div class="checkout__order-details checkout-details ">
+          <h3 class="checkout-details__title">Order details</h3>          
+          <div class="checkout-details__items">
+            <div class="checkout-details__item">
+              <div class="checkout-details__item-amount">2 items in bag</div>
+              <div class="checkout-details__item-inner">
+                <picture>
+              <source srcset="images/order-img1.avif" type="image/avif">
+              <source srcset="images/order-img1.webp" type="image/webp">
+              <img src="images/order-img1.jpg" width="139" height="182" alt="order item image">
+                </picture>
+                <div class="checkout-details__item-box">
+                  <p class="checkout-details__item-name">NAOMI</p>
+                  <dl class="checkout-details__item-list"> 
+                    <div class="checkout-details__item-wrapper">
+                      <dt class="checkout-details__item-term">SIZE:</dt>
+                      <dd class="checkout-details__item-definition">S</dd>
+                    </div>  
+                    <div class="checkout-details__item-wrapper">
+                      <dt class="checkout-details__item-term">COLOR:</dt>
+                      <dd class="checkout-details__item-definition">IVORY</dd>
+                    </div>   
+                    <div class="checkout-details__item-wrapper">
+                      <dt class="checkout-details__item-term">Item subtotal:</dt>
+                      <dd class="checkout-details__item-definition">€ 2,600</dd>
+                    </div>        
+                  </dl>
+                </div>
+                <button class="checkout-details__item-btn" type="button">
+                  <img src="../images/delete-busket.svg" width="20" height="20" alt="delete item from order">
+                </button>
+              </div>
+            </div>
+            <div class="checkout-details__item">              
+              <div class="checkout-details__item-inner">
+                <picture>
+                <source srcset="images/order-img2.avif" type="image/avif">
+                <source srcset="images/order-img2.webp" type="image/webp">
+                <img src="images/order-img2.jpg" width="139" height="182" alt="order item image">
+                </picture>
+                <div class="checkout-details__item-box">
+                  <p class="checkout-details__item-name">SABINE</p>
+                  <dl class="checkout-details__item-list">  
+                    <div class="checkout-details__item-wrapper">
+                      <dt class="checkout-details__item-term">SIZE:</dt>
+                      <dd class="checkout-details__item-definition">38</dd>
+                    </div> 
+                    <div class="checkout-details__item-wrapper">
+                      <dt class="checkout-details__item-term">COLOR:</dt>
+                      <dd class="checkout-details__item-definition">IVORY</dd>
+                    </div> 
+                    <div class="checkout-details__item-wrapper">
+                      <dt class="checkout-details__item-term">Item subtotal:</dt>
+                      <dd class="checkout-details__item-definition">€ 200</dd>
+                    </div>              
+                  </dl>
+                </div>
+                <button class="checkout-details__item-btn" type="button">
+                  <img src="../images/delete-busket.svg" width="20" height="20" alt="delete item from order">
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="checkout__order-summ checkout-summ">
+            <div class="checkout-summ__title">Your order</div>
+            <dl class="checkout-summ__item-list">
+                  <div class="checkout-summ__item-box">
+                    <dt class="checkout-summ__item-term">Subtotal:</dt>
+                    <dd class="checkout-summ__item-definition">€2, 800</dd>
+                  </div>  
+                  <div class="checkout-summ__item-box">
+                    <dt class="checkout-summ__item-term">Shipping:</dt>
+                    <dd class="checkout-summ__item-definition">FREE</dd>
+                  </div> 
+                  <div class="checkout-summ__item-box">
+                    <dt class="checkout-summ__item-term">Total:</dt>
+                    <dd class="checkout-summ__item-definition">€ 2,800</dd>
+                  </div>           
+            </dl>
+            <a class="checkout-summ__link" href="#" target="_blank" rel="noopener noreferer">
+              Change items
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<!--=include footer.html-->
