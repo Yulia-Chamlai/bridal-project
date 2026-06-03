@@ -35,6 +35,10 @@
 <path d="M5.07692 0H0V5H5.07692V0ZM20 0H7V5H20V0ZM0 7.5H5V12.5H0V7.5ZM20 7.5H7V12.5H20V7.5ZM0 15H5.07692V20H0V15ZM20 15H7V20H20V15Z" fill="#94897C"/>
 </g></symbol><symbol id="list-icon" viewBox="0 0 40 40"><g fill="none">
 <path d="M13.3333 10H35M13.3333 20H35M13.3333 30H35M5 10H5.01667M5 20H5.01667M5 30H5.01667" stroke="#3B2317" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</g></symbol><symbol id="menu-btn" viewBox="0 0 30 18"><g fill="none">
+<line y1="1" x2="30" y2="1" stroke="#513C27" stroke-width="2"/>
+<line y1="9" x2="30" y2="9" stroke="#513C27" stroke-width="2"/>
+<line y1="17" x2="30" y2="17" stroke="#513C27" stroke-width="2"/>
 </g></symbol><symbol id="pagination-next" viewBox="0 0 12 4"><g fill="none">
 <path d="M8.39994 3.74375C8.55994 3.40242 8.71461 3.10375 8.86394 2.84775C9.02394 2.59175 9.17861 2.37842 9.32794 2.20775H-6.1512e-05V1.53575H9.32794C9.17861 1.35442 9.02394 1.13575 8.86394 0.87975C8.71461 0.62375 8.55994 0.330416 8.39994 -0.00025034H8.95994C9.63194 0.778416 10.3359 1.35442 11.0719 1.72775V2.01575C10.3359 2.37842 9.63194 2.95442 8.95994 3.74375H8.39994Z" fill="#513C27"/>
 </g></symbol><symbol id="pagination-prev" viewBox="0 0 12 4"><g fill="none">
