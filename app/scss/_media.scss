@@ -286,7 +286,7 @@
     margin-bottom: 70px;
   }
   .designer {
-    margin-bottom: 130px;
+    margin-bottom: 170px;
   }
   .designer__title
   {
@@ -404,6 +404,36 @@
   }
   .our-advantages__inner {
     display: block;
+    padding-top: 70px;
+    margin-bottom: 70px;
+  }
+  .our-advantages__img {
+    max-width: 100%;
+    height: 185px;
+    margin-top: -150px;
+    img {
+      width: 100%;
+
+    }
+  }
+  .our-advantages__title {
+    text-align: center;
+  }
+  .our-advantages__list {
+    text-align: center;
+  }
+  .our-advantages__item {
+    padding-left: 0;
+    padding-top: 28px;
+    margin-bottom: 15px;
+  }
+  .our-advantages__item::after {
+    top: 0;
+    transform: translateX(-50%);
+    left: 50%;
+  }
+  .our-advantages__inner::after {
+    right: -75px;
   }
   .footer__nav-list {
     justify-content: center;
